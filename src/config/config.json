@@ -1,0 +1,54 @@
+{
+  "site": {
+    "title": "Andean Kingdom",
+    "base_url": "https://andeankingdom.com",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.ico",
+    "logo": "/images/logoAK.png",
+    "logo_width": "150",
+    "logo_height": "42",
+    "logo_text": "Andean Kingdom"
+  },
+
+  "settings": {
+    "search": false,
+    "sticky_header": true,
+    "theme_switcher": false,
+    "default_theme": "system",
+    "pagination": 4,
+    "blog_folder": "blog",
+    "default_language": "en",
+    "disable_languages": ["fr"],
+    "default_language_in_subdir": false,
+    "top_header": true
+  },
+
+  "params": {
+    "contact_form_action": "andeankingdom@gmail.com",
+    "address": "Parque Ginebra 120 - Huaraz, Perú",
+    "phone": "+51 944 913 011",
+    "email": "andeankingdom@gmail.com",
+    "footer_content": "We are your best choice for climbing and mountaineering in the Cordillera Blanca and Huayhuash, offering adventure expeditions with full logistical support, as well as equipment rental, sales, and purchase services to ensure a seamless experience in the Andes.",
+    "copyright": "&copy; Designed And Developed by Andean Kingdom",
+    "copyright_menu": {
+      "enable": false,
+      "menu_items": [
+        { "name": "Privacy Policy", "url": "/privacy-policy" },
+        { "name": "Terms of Service", "url": "/terms" }
+      ]
+    }
+  },
+
+  "navigation_button": {
+    "enable": false,
+    "label": "Contact",
+    "link": "/contact"
+  },
+
+  "metadata": {
+    "meta_author": "Andean Kingdom",
+    "meta_image": "/images/og-image.png",
+    "meta_description": "Best choice for climbing and mountaineering in the Cordillera Blanca"
+  }
+}
