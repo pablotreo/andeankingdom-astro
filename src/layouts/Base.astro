@@ -9,7 +9,6 @@ import Header from "@/partials/Header.astro";
 import "@/styles/main.css";
 import { AstroFont } from "astro-font";
 import { ClientRouter } from "astro:transitions";
-import SearchModal from "./helpers/SearchModal";
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -112,7 +111,7 @@ const language = lang || getLangFromUrl(Astro.url);
     <meta
       name="description"
       content={plainify(
-        description ? description : config.metadata.meta_description,
+        description ? description : config.metadata.meta_description
       )}
     />
 
@@ -125,7 +124,7 @@ const language = lang || getLangFromUrl(Astro.url);
     <meta
       property="og:title"
       content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title,
+        meta_title ? meta_title : title ? title : config.site.title
       )}
     />
 
@@ -133,7 +132,7 @@ const language = lang || getLangFromUrl(Astro.url);
     <meta
       property="og:description"
       content={plainify(
-        description ? description : config.metadata.meta_description,
+        description ? description : config.metadata.meta_description
       )}
     />
     <meta property="og:type" content="website" />
@@ -146,7 +145,7 @@ const language = lang || getLangFromUrl(Astro.url);
     <meta
       name="twitter:title"
       content={plainify(
-        meta_title ? meta_title : title ? title : config.site.title,
+        meta_title ? meta_title : title ? title : config.site.title
       )}
     />
 
@@ -154,7 +153,7 @@ const language = lang || getLangFromUrl(Astro.url);
     <meta
       name="twitter:description"
       content={plainify(
-        description ? description : config.metadata.meta_description,
+        description ? description : config.metadata.meta_description
       )}
     />
 
@@ -178,7 +177,6 @@ const language = lang || getLangFromUrl(Astro.url);
   <body class="overflow-x-hidden leading-[22px] relative">
     <TwSizeIndicator />
     <Header />
-    <SearchModal lang={language} client:load />
     <main id="main-content">
       <slot />
     </main>
